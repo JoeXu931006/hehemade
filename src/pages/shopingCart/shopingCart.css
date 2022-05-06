@@ -1,0 +1,107 @@
+.cart-items{
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.cart-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem auto;
+}
+.cart-image{
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cart-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+.cart-image h3{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.cart-item-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+.cart-item-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+.total-price{
+    float: right;
+    margin-right: 3rem;
+    font-size: 3rem;
+}
+
+
+.clear {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: 3rem;
+    margin-top: 10px;
+
+}
+
+.clear:hover,
+.clear:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+@media screen and (max-width:860px) {
+    .cart-image h3 {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .cart-item-price{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .cart-item-quantity{
+        font-size: 2rem;
+    }
+    .total-price{
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+    .clear{
+        font-size: 16px;
+        margin-left: 2rem;
+        margin-bottom: 20px;
+    }
+}

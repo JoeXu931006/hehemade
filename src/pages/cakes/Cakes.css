@@ -1,0 +1,78 @@
+.cake-items{
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.cake{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin: 3rem 1rem;
+    padding: 1rem;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cake span{
+    color: black;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.cake-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.cake-image{
+    width: 80%;
+}
+
+.cake-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.cake-button {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember", sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.cake-button:hover {
+    background-color: #f7fafa;
+}
+
+.cake-button:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+
+
+@media screen and (max-width:860px){
+    .cake-items{
+        grid-template-columns: 1fr;
+    }
+}
